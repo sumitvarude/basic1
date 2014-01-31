@@ -76,6 +76,8 @@ public class LengthTest {
         assertEquals(true,length.equals(length1));
     }
 
+
+
     @Test
     public void testWillConvertMillimeterToCentimeter(){
         Length length = new Length(1000,new Millimeter());
@@ -123,6 +125,60 @@ public class LengthTest {
      public void testWillConvertMileToCentimeter(){
         Length length = new Length(1,new Mile());
         Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+
+
+
+    @Test
+    public void testWillConvertMillimeterToMeter(){
+        Length length = new Length(1,new Millimeter());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertCentimeterToMeter(){
+        Length length = new Length(1,new Centimeter());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertKilometerToMeter(){
+        Length length = new Length(1,new Kilometer());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertInchToMeter(){
+        Length length = new Length(1,new Inch());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertFootToMeter(){
+        Length length = new Length(1,new Foot());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertYardsToMeter(){
+        Length length = new Length(1,new Yard());
+        Length length1 = length.convertTo(new Meter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertMilesToMeter(){
+        Length length = new Length(1,new Millimeter());
+        Length length1 = length.convertTo(new Meter());
 
         assertEquals(true,length.equals(length1));
     }
