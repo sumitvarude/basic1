@@ -75,6 +75,57 @@ public class LengthTest {
 
         assertEquals(true,length.equals(length1));
     }
+
+    @Test
+    public void testWillConvertMillimeterToCentimeter(){
+        Length length = new Length(1000,new Millimeter());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertMeterToCentimeter(){
+        Length length = new Length(1,new Meter());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+     public void testWillConvertKmToCentimeter(){
+        Length length = new Length(1,new Kilometer());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+    public void testWillConvertInchToCentimeter(){
+        Length length = new Length(1,new Inch());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertFootToCentimeter(){
+        Length length = new Length(1,new Foot());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+     public void testWillConvertYardsToCentimeter(){
+        Length length = new Length(1,new Yard());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+    @Test
+     public void testWillConvertMileToCentimeter(){
+        Length length = new Length(1,new Mile());
+        Length length1 = length.convertTo(new Centimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
 }
 
 
