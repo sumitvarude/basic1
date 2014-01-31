@@ -21,17 +21,57 @@ public class LengthTest {
     }
 
     @Test
-    public void testWillConvertMillimeterToCentimeter(){
-        Length length = new Length(1,new Millimeter());
-        Length length1 = length.convertTo(new Centimeter());
+    public void testWillConvertCentimeterToMillimeter(){
+        Length length = new Length(1,new Centimeter());
+        Length length1 = length.convertTo(new Millimeter());
 
         assertEquals(true,length.equals(length1));
     }
 
     @Test
-    public void testWillConvertMillimeterToMeter(){
-        Length length = new Length(1,new Millimeter());
-        Length length1 = length.convertTo(new Meter());
+    public void testWillConvertMeterToMillimeter(){
+        Length length = new Length(1,new Meter());
+        Length length1 = length.convertTo(new Millimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertKmToMillimeter(){
+        Length length = new Length(1,new Kilometer());
+        Length length1 = length.convertTo(new Millimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertFootToMillimeter(){
+        Length length = new Length(1,new Foot());
+        Length length1 = length.convertTo(new Millimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertInchToMillimeter(){
+        Length length = new Length(1,new Inch());
+        Length length1 = length.convertTo(new Millimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertYardsToMillimeter(){
+        Length length = new Length(1,new Yard());
+        Length length1 = length.convertTo(new Millimeter());
+
+        assertEquals(true,length.equals(length1));
+    }
+
+    @Test
+    public void testWillConvertMilesToMillimeter(){
+        Length length = new Length(1,new Mile());
+        Length length1 = length.convertTo(new Millimeter());
 
         assertEquals(true,length.equals(length1));
     }

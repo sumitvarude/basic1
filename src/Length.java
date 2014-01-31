@@ -16,7 +16,7 @@ public class Length {
         if (o == null || getClass() != o.getClass()) return false;
 
         Length length1 = (Length) o;
-        if (this.convertTo(new Centimeter()).getValue()== length1.convertTo(new Centimeter()).getValue()) return true;
+        if (this.convertTo(new Millimeter()).getValue()== length1.convertTo(new Millimeter()).getValue()) return true;
         return false;
     }
 

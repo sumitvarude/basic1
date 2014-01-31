@@ -1,5 +1,5 @@
 public class Inch extends Unit {
-    private double inch = 2.54000508;
+    private double inch = 25.4;
     @Override
     public double getUnitValue() {
         return inch;
